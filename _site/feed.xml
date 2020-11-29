@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-29T16:22:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">sgt@Blogs</title><subtitle>Hay~,我是沈涛，一名资质平凡但又不懈追求的前端开发者,</subtitle><entry><title type="html">Jekyll 基础学习</title><link href="http://localhost:4000/jekyll/2020/11/29/learn-jekyll.html" rel="alternate" type="text/html" title="Jekyll 基础学习" /><published>2020-11-29T10:03:00+08:00</published><updated>2020-11-29T10:03:00+08:00</updated><id>http://localhost:4000/jekyll/2020/11/29/learn-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/2020/11/29/learn-jekyll.html">&lt;h2 id=&quot;目录结构说明&quot;&gt;目录结构说明&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_[dirname]&lt;/code&gt; : 表示 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; 内部约定的目录。
+    &lt;ul&gt;
+      &lt;li&gt;_layouts : 表示包含布局文件。&lt;/li&gt;
+      &lt;li&gt;_includes : 表示存放相关的模板文件。&lt;/li&gt;
+      &lt;li&gt;_posts : 存放文章&lt;/li&gt;
+      &lt;li&gt;_sass : 样式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;_config.yml : 站点配置文件，可以在模板中通过 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;site.var&lt;/code&gt; 读取相关的配置。&lt;/li&gt;
+  &lt;li&gt;index.md : 博客入口页面。&lt;/li&gt;
+  &lt;li&gt;about.md : 博客关于页面。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;表达式: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{{express}}&lt;/code&gt;
+语句：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{% statement %}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;escape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;escape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><summary type="html">目录结构说明</summary></entry></feed>

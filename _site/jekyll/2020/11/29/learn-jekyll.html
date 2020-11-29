@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Jekyll 基础学习</title>
+    <meta name="description" content="目录结构说明">  
+
+    <meta name="author" content="st">
+
+</head>
+  <body>
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Jekyll 基础学习</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-11-29T10:03:00+08:00" itemprop="datePublished">Nov 29, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="目录结构说明">目录结构说明</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_[dirname]</code> : 表示 <code class="language-plaintext highlighter-rouge">jekyll</code> 内部约定的目录。
+    <ul>
+      <li>_layouts : 表示包含布局文件。</li>
+      <li>_includes : 表示存放相关的模板文件。</li>
+      <li>_posts : 存放文章</li>
+      <li>_sass : 样式</li>
+    </ul>
+  </li>
+  <li>_config.yml : 站点配置文件，可以在模板中通过 <code class="language-plaintext highlighter-rouge">site.var</code> 读取相关的配置。</li>
+  <li>index.md : 博客入口页面。</li>
+  <li>about.md : 博客关于页面。</li>
+</ul>
+
+<p>表达式: <code class="language-plaintext highlighter-rouge">{{express}}</code>
+语句：<code class="language-plaintext highlighter-rouge">{% statement %}</code></p>
+
+<p>Example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">page</span><span class="p">.</span><span class="nx">title</span> <span class="o">%</span><span class="p">}</span> <span class="p">{{</span><span class="nx">page</span><span class="p">.</span><span class="nx">title</span> <span class="o">|</span> <span class="nx">escape</span><span class="p">}}</span>
+<span class="p">{</span><span class="o">%</span> <span class="k">else</span> <span class="o">%</span><span class="p">}</span> <span class="p">{{</span><span class="nx">site</span><span class="p">.</span><span class="nx">title</span> <span class="o">|</span> <span class="nx">escape</span><span class="p">}}</span>
+<span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span>
+</code></pre></div></div>
+
+
+  </div><a class="u-url" href="/jekyll/2020/11/29/learn-jekyll.html" hidden></a>
+</article>
+
+            <section class="footer">
+    <footer>
+        <span class="footer__copyright">© 2018 ~ 2020-11-29 ST. All rights reserved.</span>
+        <span class="footer__copyright">contact email: st_ah@163.com</span>
+    </footer>
+</section>
+        </div>
+    </div>
+  </body>
+</html>
