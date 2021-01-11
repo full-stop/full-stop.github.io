@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner">
-            {{ content }}
-            {% include footer.html %}
-        </div>
-    </div>
-  </body>
+<html lang="zh-Hans">
+{% include head.html %}
+<body>
+<section class="wrapper">
+    <header>
+        {% include nav.html %}
+        {% if page.url == '/' %}
+        {% include title.html %}
+        {% endif %}
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+</section>
+</body>
 </html>

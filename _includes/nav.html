@@ -1,0 +1,12 @@
+<div class="nav">
+    <ul class="nav__inner">
+        <li>
+            <a href="/"  class="current">home</a>
+        </li>
+        {% for category in site.categories %}
+        <li>
+            <a href="">{{category | first}} </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,64 @@
+I"�<h2 id="目录结构说明">目录结构说明</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_[dirname]</code> : 表示 <code class="language-plaintext highlighter-rouge">jekyll</code> 内部约定的目录。
+    <ul>
+      <li>_layouts : 表示包含布局文件。</li>
+      <li>_includes : 表示存放相关的模板文件。</li>
+      <li>_posts : 存放文章</li>
+      <li>_sass : 样式</li>
+    </ul>
+  </li>
+  <li>_config.yml : 站点配置文件，可以在模板中通过 <code class="language-plaintext highlighter-rouge">site.var</code> 读取相关的配置。</li>
+  <li>index.md : 博客入口页面。</li>
+  <li>about.md : 博客关于页面。</li>
+</ul>
+
+<p><img src="" width="303" height="392" /></p>
+
+<p>表达式: <code class="language-plaintext highlighter-rouge">{{express}}</code>
+  语句：<code class="language-plaintext highlighter-rouge">{% statement %}</code></p>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="kd">const</span> <span class="nx">DEVELOPER_SIGN_KEY</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">developer_sign_key</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">async</span> <span class="kd">function</span> <span class="nx">getSignPrivilege</span><span class="p">(</span><span class="nx">orgInfo</span><span class="p">:</span> <span class="nx">orgInfoModel</span><span class="p">,</span> <span class="nx">isDeveloper</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">orgId</span> <span class="o">=</span> <span class="nx">orgInfo</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">orgPrivileges</span> <span class="o">=</span> <span class="p">(</span><span class="nx">store</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">orgPrivileges</span> <span class="o">||</span> <span class="p">{})</span> <span class="k">as</span> <span class="p">{</span> <span class="p">[</span><span class="na">key</span><span class="p">:</span> <span class="nx">string</span><span class="p">]:</span> <span class="nx">any</span> <span class="p">};</span>
+  <span class="kd">const</span> <span class="nx">editKey</span> <span class="o">=</span> <span class="nx">isDeveloper</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">org.edit</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">agent.edit</span><span class="dl">'</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">result</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="nx">key</span><span class="p">:</span> <span class="nx">string</span><span class="p">]:</span> <span class="nx">any</span> <span class="p">}</span> <span class="o">=</span> <span class="p">{};</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">has</span><span class="p">(</span><span class="nx">orgPrivileges</span><span class="p">,</span> <span class="dl">'</span><span class="s1">${orgId}.${contractPrivilegeKey}</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="nx">orgPrivileges</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getOrgPrivileges</span><span class="p">([</span>
+      <span class="p">[</span><span class="nx">editKey</span><span class="p">,</span> <span class="p">{</span> <span class="nx">orgId</span> <span class="p">}],</span>
+      <span class="p">[</span><span class="nx">DEVELOPER_SIGN_KEY</span><span class="p">,</span> <span class="p">{</span> <span class="nx">orgId</span> <span class="p">}],</span>
+    <span class="p">]);</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nx">result</span><span class="p">[</span><span class="nx">orgId</span><span class="p">]</span> <span class="p">?</span> <span class="p">{</span> <span class="p">...</span><span class="nx">result</span><span class="p">[</span><span class="nx">orgId</span><span class="p">]</span> <span class="p">}</span> <span class="p">:</span> <span class="p">{};</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+:ET

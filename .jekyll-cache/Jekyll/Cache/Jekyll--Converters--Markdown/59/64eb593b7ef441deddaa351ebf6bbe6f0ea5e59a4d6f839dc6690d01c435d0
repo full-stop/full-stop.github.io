@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1"
-  />
-  <title>
-    。FULL-STOP
-  </title>
-  <meta
-    name="description"
-    content="Hay~,我叫沈涛，一名资质平凡但又不懈追求的前端开发者。"
-  />
-
-  <meta name="author" content="。FULL-STOP" />
-  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="/css/main.css" />
-
-  <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.1/build/styles/default.min.css"
-  />
-  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.1/build/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-</head>
-
-<body>
-<section class="wrapper">
-    <header>
-        <div class="nav">
-    <ul class="nav__inner">
-        <li>
-            <a href="/"  class="current">home</a>
-        </li>
-        
-        <li>
-            <a href="">前端 </a>
-        </li>
-        
-        <li>
-            <a href="">其它 </a>
-        </li>
-        
-    </ul>
-</div>
-        
-        <div class="title">
-    <div class="title__inner">
-        <div class="title__logo">
-            <img src="https://avatars2.githubusercontent.com/u/23046884?s=460&u=cffc30b6c99ab0529c67e96c666232e5ddec9986&v=4"
-                 alt="">
-        </div>
-        <div class="title__text">
-            <h1>
-                。FULL-STOP
-                <a href="http://github.com/full-stop" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="mailto:sgt_ah@163.com"><i class="fa fa-envelope"></i></a>
-            </h1>
-            <p>There&#39;s a begining , a middle , and an end.</p>
-        </div>
-    </div>
-</div>
-        
-    </header>
-    <main>
-        <div class="content-wrap">
+I"U<div class="content-wrap">
       <ol class="post-list">
         
         <li>
@@ -110,14 +40,4 @@
       </ol>
 </div>
 
-
-    </main>
-    <footer>
-  <div class="footer__inner">
-      <span class="footer__copyright">© 2020 ~ 2021-01-11 。FULL-STOP All rights reserved.</span>
-      <span class="footer__design">Design in the 。FULL-STOP <span class="love">❤</span> Jekyll </span>
-  </div>
-</footer>
-</section>
-</body>
-</html>
+:ET
